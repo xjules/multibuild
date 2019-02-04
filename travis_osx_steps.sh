@@ -19,7 +19,7 @@ source $MULTIBUILD_DIR/library_builders.sh
 
 function before_install {
     # Uninstall oclint. See Travis-CI gh-8826
-    brew cask uninstall oclint || true    
+    # brew cask uninstall oclint || true    
     export CC=clang
     export CXX=clang++
     get_macpython_environment $MB_PYTHON_VERSION venv
